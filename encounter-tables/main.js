@@ -10,9 +10,9 @@ function createWindow() {
     backgroundColor: '#ffffff',
     icon: `file://${__dirname}/dist/assets/logo.png` });
 
-  win.loadURL(`file://${__dirname}/dist/angular-tour-of-heroes/index.html`)
+  win.loadURL(`file://${__dirname}/dist/encounter-tables/index.html`)
 
-  //win.webContents.openDevTools();
+  win.webContents.openDevTools();
 
   win.on('closed', () => {
     win = null;
