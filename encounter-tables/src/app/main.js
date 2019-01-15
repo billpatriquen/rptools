@@ -4,13 +4,11 @@ let win;
 
 function createWindow() {
 
-  win = new BrowserWindow({ 
-    width: 800, 
-    height: 600,
-    backgroundColor: '#ffffff',
-    icon: `file://${__dirname}/dist/assets/logo.png` });
+  win = new BrowserWindow({width: 800, height: 600, backgroundColor: "#abcdef"});
 
-  win.loadURL(`file://${__dirname}/dist/encounter-tables/index.html`)
+  console.log('file://' +__dirname +'/ui_dist/index.html');
+
+  win.loadURL(`file://${__dirname}/ui_dist/index.html`);
 
   win.webContents.openDevTools();
 
@@ -26,7 +24,6 @@ app.on('window-all-closed', () => {
   if (process.plantform !== 'darwin') {
     app.quit();
   }
-
 });
 
 app.on('activate', () => {
@@ -34,5 +31,4 @@ app.on('activate', () => {
   if (win === null) {
     createWindow();
   }
-
 });
