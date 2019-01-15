@@ -116,3 +116,4 @@ testem.log
 .DS_Store
 Thumbs.db
 encounter-tables/dist/*
+encounter-tables/src/app/ui_dist/*
