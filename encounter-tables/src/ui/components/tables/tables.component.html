@@ -1,0 +1,12 @@
+<h2>My Encounter Tables</h2>
+<ul class="list-group encounter-tables">
+  <li *ngFor="let table of tables" class="list-group-item">
+    <span class="badge">{{ table.id }}</span> {{ table.name }}
+  </li>
+</ul>
+<dl>
+  <ng-container *ngFor="let table of tables">
+    <dt>{{ table.name }}</dt>
+    <dd>{{ table.description }}</dd>
+  </ng-container>
+</dl>
