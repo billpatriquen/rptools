@@ -4,7 +4,7 @@ let win;
 
 function createWindow() {
 
-  win = new BrowserWindow({width: 800, height: 600, backgroundColor: "#abcdef"});
+  win = new BrowserWindow({width: 800, height: 600 });
 
   console.log('file://' +__dirname +'/ui_dist/index.html');
 
