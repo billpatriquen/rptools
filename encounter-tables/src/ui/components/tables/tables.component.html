@@ -1,12 +1,24 @@
 <h2>My Encounter Tables</h2>
-<ul class="list-group encounter-tables">
-  <li *ngFor="let table of tables" class="list-group-item">
-    <span class="badge">{{ table.id }}</span> {{ table.name }}
-  </li>
-</ul>
-<dl>
-  <ng-container *ngFor="let table of tables">
-    <dt>{{ table.name }}</dt>
-    <dd>{{ table.description }}</dd>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> ID </th>
+    <td mat-cell *matCellDef="let table"> {{table.id}} </td>
   </ng-container>
-</dl>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Name </th>
+    <td mat-cell *matCellDef="let table"> {{table.name}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="description">
+    <th mat-header-cell *matHeaderCellDef> Description </th>
+    <td mat-cell *matCellDef="let table"> {{table.description}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
