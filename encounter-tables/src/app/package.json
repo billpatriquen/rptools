@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "description": "Desktop client to manage random encounter tables.",
   "author": "Bill Patriquen",
+  "license": "ISC",
   "main": "main.js",
   "devDependences": { "electron": "^4.0.1" }
 }

@@ -117,3 +117,5 @@ testem.log
 Thumbs.db
 encounter-tables/dist/*
 encounter-tables/src/app/ui_dist/*
+fronts/dist/*
+fronts/src/app/ui_dist/*

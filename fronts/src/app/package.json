@@ -1,0 +1,10 @@
+{
+  "name": "fronts",
+  "productName": "RPTools - Fronts",
+  "version": "0.1.0",
+  "description": "Desktop client to manage campaign and adventure fronts for Dungeon World.",
+  "author": "Bill Patriquen",
+  "license": "ISC",
+  "main": "main.js",
+  "devDependences": { "electron": "^4.0.1" }
+}
