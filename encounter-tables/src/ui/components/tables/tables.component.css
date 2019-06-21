@@ -1,0 +1,43 @@
+.tables {
+    list-style: none;
+    padding: 3;
+    border-style: solid;
+    border-color: black;
+}
+
+.roll {
+    display: inline;
+    border-style: solid;
+    border-color: red;
+    border-radius: 50%;
+}
+
+.details {
+    display:inline;
+    border-style: solid;
+    border-color: blue;
+}
+
+.table {
+    border-style: solid;
+    border-color: green;
+    margin: 0 0 3 0;
+}
+
+.table:hover {
+    background-color: brown;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 5% 95%;
+}
+
+.roll-icon {
+    grid-column: 1 / span 1;
+}
+
+.table-details {
+    grid-column-start: 2 / span 1;
+    white-space: nowrap;
+}
